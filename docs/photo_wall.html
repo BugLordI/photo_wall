@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeddingShow</title>
+    <link rel="stylesheet" href="css/background.css">
+</head>
+<script>
+    var count = 0;
+    function loadDone() {
+        count++;
+    }
+    var loadTimer = setInterval(() => {
+        if (count >= 66) {
+            start()
+        }
+    }, 300);
+    function start() {
+        clearInterval(loadTimer)
+        setTimeout(() => {
+            document.getElementById('loading-mask').style.display = 'none'
+        }, 100);
+    }
+</script>
+<body id="danmu-container">
+    <div class="sky">
+        <div id="loading-mask">
+            <div class="loading-box">
+                <div class="loading"></div>
+                <p id="loading-txt">努力加载中，请稍候</p>
+            </div>
+        </div>
+        <div id="left"></div>
+        <div id="right"></div>
+        <div class="bg" id="id_bg">
+            <div id="dragBox">
+                <div class="spinBox" id="spinBox">
+                    <img id="zmy" onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/1.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/2.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/3.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/4.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/5.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/6.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/7.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/8.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/9.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/10.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/11.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/12.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/13.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/14.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/15.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/16.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/17.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/18.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/19.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/20.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/21.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/22.jpg">
+                </div>
+                <div class="spinBox" id="spinBox2">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/23.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/24.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/25.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/26.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/27.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/28.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/29.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/30.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/31.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/32.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/33.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/34.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/35.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/36.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/37.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/38.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/39.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/40.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/41.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/42.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/43.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/44.jpg">
+                </div>
+                <div class="spinBox" id="spinBox3">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/45.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/46.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/47.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/48.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/49.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/50.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/51.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/52.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/53.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/54.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/55.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/56.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/57.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/58.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/59.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/60.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/61.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/62.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/63.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/64.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/65.jpg">
+                    <img onload="loadDone()" src="https://pic-1257273668.cos.ap-shanghai.myqcloud.com/photo_wall/66.jpg">
+                </div>
+            </div>
+            <div class="foreground-photo"></div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/danmu.js"></script>
+<script src="js/background.js"></script>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+        /* 基础样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* 粉色渐变背景 */
+        }
+
+        /* 星星的样式 */
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        /* 星星闪烁动画 */
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            bottom: -8px; /* 下划线与文字的距离 */
+        }
+
+        @keyframes waveGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .wave-text {
+            font-weight: bold;
+            background: linear-gradient(270deg, rgb(255, 0, 44), rgba(246, 157, 157, 0.52), rgb(243, 98, 98), #ed1010); /* 海蓝色调 */
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: waveGradient 4s ease infinite alternate;
+        }
+
+        .wave-text:hover {
+            text-decoration: underline;
+            color: #ff8400;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            cursor: default;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <span id="invitation" class="wave-text">
+        <a href="invitation.html">婚礼邀请</a>
+    </span>
+    <p>
+    <span id="photo-wall" class="wave-text">
+        <a href="photo_wall.html">照片墙</a>
+    </span>
+</div>
+<script>
+    // 动态生成星星
+    function createStars() {
+        const numberOfStars = 100; // 星星数量
+        for (let i = 0; i < numberOfStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+
+            // 随机位置
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+
+            // 随机大小
+            const size = Math.random() * 3 + 1; // 1px 到 4px
+
+            // 随机动画延迟
+            const delay = Math.random() * 2;
+
+            // 设置样式
+            star.style.left = `${x}px`;
+            star.style.top = `${y}px`;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.animationDelay = `${delay}s`;
+
+            // 添加到页面
+            document.body.appendChild(star);
+        }
+    }
+
+    // 初始化星星
+    createStars();
+
+    // 监听窗口大小变化，重新生成星星
+    window.addEventListener('resize', () => {
+        document.querySelectorAll('.star').forEach(star => star.remove());
+        createStars();
+    });
+</script>
+</body>
+</html>
